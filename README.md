@@ -9,8 +9,9 @@ Place `bsource.fish` in ~/.config/fish/functions. `envToFish.py` should be execu
 `bsource <bash script>`
 
 ## Bugs / Obvious issues
- * bsource fails if more than 1 argument is given to the function.
+ * bsource function expects only 1 argument but does not check this.
  * possibly reorders path variable components.
  * could probably be implemented in pure fish code.
  * might not escape all variables properly, hence yielding an invalid profile.fish.
- * leaves profile.fish files begin in the current working directory.
+ * leaves profile.fish files behind in the current working directory.
+ * overwrites existing profile.fish files in the current working directory.
