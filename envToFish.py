@@ -3,7 +3,7 @@
 import os
 import subprocess
 
-badKeys = ['HOME', 'PWD', 'USER', '_', 'OLDPWD']
+badKeys = ['HOME', 'PWD', 'USER', '_', 'OLDPWD', 'SHLVL']
 with open('profile.fish', 'w') as f:
     for key, val in os.environ.items():
         if key in badKeys:
